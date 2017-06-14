@@ -1,0 +1,70 @@
+html,body {
+	height: 100%;
+	font-family: "microsoft yahei";
+	background: url(../images/bg-4.jpeg) center center no-repeat;
+	background-size: cover;
+}
+
+.lxm_tuandui {
+	width: 130px;
+	height: 50px;
+	position: absolute;
+	bottom: 100px;
+	right: 300px;
+	font-size: 16px;
+	border: none;
+	background: rgba(0,0,0,.7);
+	border-radius: 5px;
+	color: white;
+}
+
+.lxm_qiye {
+	width: 130px;
+	height: 50px;
+	position: absolute;
+	bottom: 100px;
+	right: 120px;
+	font-size: 16px;
+	border: none;
+	background: rgba(0,0,0,.7);
+	border-radius: 5px;
+	color: white;
+}
+
+.lxm_title_one {
+	color: white;
+	font-size: 70px;
+	/*margin: 370px 0 0 260px;*/
+	position: absolute;
+	top: 200px;
+	left: 240px;
+	font-family: "宋体";
+}
+
+.lxm_border {
+	width: 275px;
+	height: 5px;
+	background: white;
+	position: absolute;
+	top: 310px;
+	left: 240px;
+}
+
+.lxm_title_two {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	top: 335px;
+	left: 240px;
+	font-family: "宋体";
+}
+
+.lxm_eng {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	top: 395px;
+	left: 245px;
+	font-family: "宋体";
+	letter-spacing: 3px;
+}

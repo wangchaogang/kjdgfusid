@@ -1,0 +1,264 @@
+.lhq_recruitDetails{
+	width: 85%;
+	height:auto;
+	/***********/
+	margin: 0 auto;
+	margin-top: 98px;
+	background:#FFFFFF;
+	clear: both;
+	/*overflow: hidden;*/
+}
+.lhq_recruitDetails_title{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #777777;
+	letter-spacing: 5px;
+	position: relative;
+	}
+
+.lhq_recruitDetails_center{
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	clear: both;
+	/*overflow: hidden;*/
+}
+.lhq_recruitDetails_center>.lhq_zbjl{
+	width: 100%;
+	height: auto;
+	font-size: 14px;
+	background: #FFFFFF;
+	clear: both;
+	overflow: hidden;
+}
+.lhq_zbjl_top{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	color: #777777;
+	background: #F7F7F7;
+	text-indent: 1em;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 15px;
+}
+.lhq_zbjl_zj{
+	width: 70%;
+	height: auto;
+	float: left;
+}
+.lhq_zbjl_zj>p{
+	width: 100%;
+	height: 30px;
+	margin-top: 25px;
+}
+.lhq_zbjl_zj>p>span{
+	width:50%;
+	height: 30px;
+	float: left;
+	display: block;
+}
+.lhq_zbjl_zj>p>span>label{
+	width: 30%;
+	height:30px;
+	float: left;
+	display: block;
+	font-size: 14px;
+	line-height: 30px;
+	margin-left: 7.5%;
+	text-align: center;
+	font-weight:normal;
+}
+.lhq_zbjl_zj>p>span:nth-child(2)>label{
+	margin-left:8%;
+}
+.lhq_zbjl_zj>p>span>input{
+	width: 55%;
+	height: 30px;
+	float: left;
+	display: block;
+	background: #F7F7F7;
+	line-height: 30px;
+	border-radius: 3px;
+	border:1px solid #C0C0C0;
+	text-indent: 1em;
+	font-size: 12px;
+}
+.lhq_xb{
+	width: 55%;
+	height: 30px;
+	float: left;
+	display: inline-block;
+	/*background: red;*/
+	line-height: 30px;
+	font-style: normal;
+	border-radius: 3px;
+	text-indent: 1em;
+}
+.lhq_zbjl_center{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	background: #F7F7F7;
+	text-indent: 1em;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 280px;
+	color: #777777;
+	border-bottom: 1px solid #E6E6E6;
+	clear: both;
+	overflow: hidden;
+}
+.lhq_recruitDetails_img{
+	width: 130px;
+	height: 130px;
+	float: right;
+	margin-top: 20px;
+	/*background: #F7F7F7;*/
+	margin-right: 8%;
+	background: url(../images/hhou.png);
+	background-size:100% 100% ;
+	position: relative;
+
+	/*overflow: hidden;*/
+}
+
+.lhq_zbjl_zjj{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+}
+.lhq_zbjl_zjj>p{
+	width: 100%;
+	height: 35px;
+	margin-top: 20px;
+}
+.lhq_zbjl_zjj>p>span{
+	width:50%;
+	height: 35px;
+	float: left;
+	display: block;
+}
+.lhq_zbjl_zjj>p>span>label{
+	width: 30%;
+	height:35px;
+	float: left;
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	margin-left: 7.5%;
+	text-align: center;
+	font-weight:normal;
+	
+}
+.lhq_zbjl_zjj>p>span:nth-child(2)>label{
+	margin-left:0;
+}
+.lhq_zbjl_zjj>p>span>input{
+	width: 55%;
+	height: 35px;
+	float: left;
+	display: block;
+	background: #F7F7F7;
+	line-height: 35px;
+	border-radius: 3px;
+	border:1px solid #C0C0C0;
+	text-indent: 1em;
+	font-size: 12px;
+}
+
+.lhq_zbjl_center_three{
+	border-radius: 5px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 30px;
+	color: #777777;
+	border-bottom: 1px solid #E6E6E6;
+	clear: both;
+	background: #F7F7F7;
+	text-indent: 1em;
+	overflow: hidden;
+}
+
+
+.lhq_footerlist{
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+
+.lhq_footerlist>input:nth-child(1){
+	width: auto;
+	text-align: center;
+	height: 30px;
+	position: absolute;
+	right: 0%;
+	top:20px;
+	padding-left: 40px;
+	padding-right: 40px;	
+}
+/*.lhq_footerlist>input:nth-child(2){
+	width: auto;
+	text-align: center;
+	height: 30px;
+	position: absolute;
+	right: 6%;
+	top:25px;
+	padding-left: 20px;
+	padding-right: 20px;	
+}*/
+
+
+.span12>p{
+	margin-top: 15px;
+}
+.span12>ul>li{
+	margin-top: 15px;
+}
+.span12>ol>li{
+	margin-top: 15px;
+}
+.lhq_fhzplb{
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color:#48484C;
+	position: absolute;
+	top:20px;
+	left:4%;
+	cursor: pointer;
+}
+
+.lhq_fhzplb>span{
+	display: block;
+	float: left;
+	width: auto;
+	line-height: 30px;
+	letter-spacing: 0px;
+	color: #777777;
+}
+.lhq_fhzplb_i{
+	font-style: normal;
+	font-size: 14px;
+	line-height: 30px;
+	display: block;
+	font-weight: normal;
+	float: left;
+	letter-spacing: 2px;
+	color: #777777;
+}

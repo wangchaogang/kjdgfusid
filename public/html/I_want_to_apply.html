@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>咖芒网</title>
+		<style type="text/css">
+			#clipArea {
+				margin: 20px;
+				height: 300px;
+			}
+			
+			#clipBtn {
+				position: absolute;
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+				background: #252525;
+				color: #FFFFFF;
+				border: none;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			#file{
+				position: absolute;
+				bottom:-50px;
+				opacity: 0;
+				z-index: 99;
+				/*margin: 0 auto;*/
+			}
+			.lhq_cx{
+				position: absolute;
+				bottom:-50px;
+				border: none;
+				width: 120px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				color: #FFFFFF;
+				background: #2E2D3C;
+				font-size: 14px;
+				left: 5px;
+				z-index: 97;
+				cursor: pointer;
+			}
+			.lhq_jj{
+				position: absolute;
+				right: -38px;
+				bottom: -55px;
+				display: none;
+			}
+			#view {
+				margin: 0 auto;
+				width: 130px;
+				height: 155px;
+				float: left;
+				position: absolute;
+				top: -5px;
+				left: 0;
+				background-color: rgba(102, 102, 102,0) !important;			
+			}
+			#view img{
+				width: 100%;
+				height: 100%;
+			}
+			#tops {
+				position: fixed;
+				width:100%;
+				height:100%;
+				background:rgba(0,0,0,0.3);
+				top: -800px;
+				left: 0;
+				transition: all 0.5s;
+				z-index: 9999;
+			}
+		</style>
+		<link rel="stylesheet" href="../stylesheets/normalize.css" />
+		<link href="../images/logo.png" rel="shortcut icon" />
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/lhq520.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/footer.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/I_want_to_apply.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/nav.css" />
+		<script src="../../node_modules/jquery/dist/jquery.js"></script>
+		<script src="../javascripts/gVerify.js"></script>
+		<script src="../javascripts/layer/layer.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="../javascripts/Font-Awesome-3.2.1/css/font-awesome.css" />
+		<link rel="stylesheet" href="../stylesheets/lhq_bjq.css" />
+		<link rel="stylesheet" href="../stylesheets/init.css" />
+		<script src="../javascripts/jquery.min.js"></script>
+		<!--[if lt IE 10]-->
+		<script src="../javascripts/jquery.1.4.4.min.js"></script>
+		<!--[endif]-->
+
+	</head>
+
+	<body>
+		<div id="lxm_nav" class="nav_wrapper nav_bg_a">
+			<div class="nav">
+				<div class="nav_logo">
+					<img class="lxm_logo" src="../images/logo.png" alt="" />
+				</div>
+				<div class="nav_list">
+					<ul class="nav_color_a">
+						<li class="nav_one lxm_nav_first">
+							<a class="lxm_first_nav" href="javascript:;">首页</a>
+						</li>
+						<li class="nav_one">
+							<a href="javascript:;">设计服务</a><i class="glyphicon glyphicon-triangle-bottom"></i>
+							<div class="nav_hide">
+								<ul class="nav_hide_list"></ul>
+								<div class="nav_title"></div>
+							</div>
+						</li>
+						<li class="nav_one lxm_shejishi">
+							<a href="javascript:;">设计师</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav_right">
+					<div class="nav_search">
+						<input class="search_con" type="text" placeholder="搜索设计服务" />
+						<i class="glyphicon glyphicon-search search_now"></i>
+					</div>
+					<p class="login">登录</p>
+					<p class="res">注册</p>
+					<div class="user" style='display: none;'>
+						<img src="../images/40x40.jpg" alt="" />
+						<div class="user_list_wrapper">
+							<div class="user_list">
+								<ul>
+									<li class="user_shop">
+										<a href="javascript:;">个人开店</a>
+									</li>
+									<li class="user_data">
+										<a href="javascript:;">个人资料</a>
+									</li>
+									<li class="user_out">
+										<a href="javascript:;">退出登录</a>
+									</li>
+								</ul>
+								<div class="user_title"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<p class="inter">咖芒网</p>-->
+		<div class="login_wrapper" style="display: none;z-index: 99999;">
+			<div class="login_con">
+				<p>用第三方帐号登录咖芒</p>
+				<i class="glyphicon glyphicon-remove login_remove"></i>
+
+				<!--第三方-->
+				<div class="other_mode">
+					<div class="tencent"><img src="../images/QQ-1.png" alt="" /></div>
+					<div class="WeChat"><img src="../images/wx-1.png" alt="" /></div>
+				</div>
+
+				<!--标题-->
+				<div class="login_email">
+					<p></p>
+					<p>使用邮箱号登录咖芒</p>
+					<p></p>
+				</div>
+
+				<div class="login_enter">
+					<!--普通登录-->
+					<div class="login_enter_main" style="display: block;">
+						<input class="lxm_login_one_user" type="text" placeholder="输入邮箱号" />
+						<input class="lxm_login_one_pass" type="password" placeholder="密码" />
+						<div class="login_yzm">
+							<div class="yzm_pic" id="lxm_said" style="width: 100px;height: 50px; text-align: center; line-height: 50px; background: url(../images/login_yanzheng.jpg) no-repeat;background-size: cover;font-size: 20px;letter-spacing: 3px;"></div>
+							<input class="lxm_login_one_yzm" type="text" placeholder="请输入验证码" />
+						</div>
+						<button class="lxm_login_one">登录</button>
+					</div>
+
+					<!--忘记密码-->
+					<div class="login_enter_forget" style="display: none;">
+						<input type="text" placeholder="输入邮箱号" /> 密保问题
+						<p>
+							<!--密保问题　-->
+							<select>
+								<option>我的名字</option>
+								<option>我最喜欢的人</option>
+								<option>我的小学校名</option>
+								<option>我的中学校名</option>
+								<option>我的大学校名</option>
+							</select>
+						</p>
+						<p>问题答案　<input type="text" class="resgister_Answer_forget	" placeholder="输入问题答案" /></p>
+						<button class="lxm_login_two">重置</button>
+					</div>
+
+					<div class="lxm_new_pass" style="display: none;">
+						<p><input class="resgister_pass_new" type="password" placeholder="请输入新密码" /></p>
+						<p><input class="resgister_pass_agin_new" type="password" placeholder="确认密码" /></p>
+						<button>提交</button>
+					</div>
+
+					<!--注册账号-->
+					<div class="login_enter_resgister" style="display: none;">
+						<input class="lxm_resgister_num" type="text" placeholder="输入邮箱号" />
+						<button class="resgister_list">注册</button>
+					</div>
+					<a href="javascript:;" style="display: none;" class="forget_pass">忘记密码</a>
+					<a href="javascript:;" class="resgister_now">立即注册</a><span class="login_user">还没有账号？</span>
+				</div>
+
+				<!--注册列表-->
+				<div class="resgister" style="display: none;">
+					<img src="../images/logo.png" alt="" />
+					<p></p>
+					<p>欢迎来到咖芒！请完善你的信息</p>
+					<p>账号　<span class="lxm_my_num">17600022763</span></p>
+					<p style="display: none;">昵称　<input class="resgister_user" type="text" placeholder="昵称" /></p>
+					<p>密码　<input class="resgister_pass" type="password" placeholder="设定登录密码" /></p>
+					<p>确认密码　<input class="resgister_pass_agin" type="password" placeholder="请再输入一次登录密码" /></p>
+					<p style="display: none;">
+						密保问题
+						<select class="resgister_problem">
+							<option>我的名字</option>
+							<option>我最喜欢的人</option>
+							<option>我的小学校名</option>
+							<option>我的中学校名</option>
+							<option>我的大学校名</option>
+						</select>
+					</p>
+					<p style="display: none;">问题答案　<input type="text" class="resgister_Answer" placeholder="输入问题答案" /></p>
+					<p class="lxm_rules"><input class="resgister_Check" type="checkbox" id="aa" /><label for="aa">我已阅读并接受<a class="lxm_Agreement" href="javascript:;" target="_blank">《咖芒网免责声明》</a></label></p>
+					<button class="register_sub">提交</button>
+					<i class="glyphicon glyphicon-arrow-left resgister_back"></i>
+					<i class="glyphicon glyphicon-remove resgister_remove"></i>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="lhq_recruitDetails">
+
+			<div class="lhq_recruitDetails_title">
+				个人简历
+				<div class="lhq_fhzplb"><span class="glyphicon glyphicon-menu-left"></span><i class="lhq_fhzplb_i"></i></div>
+			</div>
+			<div class="lhq_recruitDetails_center">
+				<div class="lhq_zbjl">
+					<div class="lhq_zbjl_top">个人信息</div>
+					<div class="lhq_zbjl_zj">
+						<p>
+							<span>
+								<label>姓&#x3000;名：</label>
+								<input type="text" class="Fullname" placeholder="请输入真实姓名"/>
+							</span>
+							<span>
+								<label>性&#x3000;&#x3000;别：</label>
+								<i class="lhq_xb">
+									<input type="radio" name="lhq_xb" value="男"  class="Gender Gone" checked="checked"/>男
+									<input type="radio" name="lhq_xb" value="女"  class="Gender Gtwo"/>女
+								</i>
+							</span>
+						</p>
+
+						<p>
+							<span>
+								<label>年&#x3000;龄：</label>
+								<input type="text" class="Age" placeholder="请输入真实年龄"/>
+							</span>
+							<span>
+								<label>籍&#x3000;&#x3000;贯：</label>
+								<input type="text" class="PlaceOfOrigin" placeholder="请输入您的籍贯"/>
+							</span>
+						</p>
+
+						<p>
+							<span>
+								<label>邮&#x3000;箱：</label>
+								<input type="text" class="Mailbox" placeholder="QQ/163"/>
+							</span>
+							<span>
+								<label>联系方式：</label>
+								<input type="text" class="ContactNumber" placeholder="请输入手机号码"/>
+							</span>
+						</p>
+
+						<p>
+							<span>
+								<label>学&#x3000;历：</label>
+								<input type="text" class="Education" placeholder="学历"/>
+							</span>
+							<span>
+								<label>工作经验：</label>
+								<input type="text" class="HandsOnBackground" placeholder="几年工作经验"/>
+							</span>
+						</p>
+
+					</div>
+					
+
+					<div class="lhq_recruitDetails_img">
+						<input type="file" id="file" onchange="hua()">
+						<button class="lhq_cx btn btn-primary">点击上传/修改</button>
+						<div id="view"></div>
+						<!--<div class="lhq_recruitDetails_img_one">
+							<img src="" alt="" class="HeadPortrait" />
+						</div>
+						<input type="file" name="" id="" value="" style="display: none;" class="lhq_file" />
+						<input type="button" style="" id="" value="点击添加/更改" class="lhq_button btn btn-primary" />-->					
+					</div>
+						<div id="tops">
+						<div id="clipArea"></div>
+						<button id="clipBtn" onclick="hua2()">截取</button>
+						</div>
+
+					<div class="lhq_zbjl_center">求职意向</div>
+					<div class="lhq_zbjl_zjj">
+						<p>
+							<span>
+								<label>工作性质：</label>
+								<input type="text" class="WorkingProperty" placeholder="工作性质"/>
+							</span>
+							<span>
+								<label>求职岗位：</label>
+								<input type="text" class="JobTitle" placeholder="什么职业"/>
+							</span>
+						</p>
+
+						<p>
+							<span>
+								<label>工作地区：</label>
+								<input type="text" class="Workarea" placeholder="工作地区"/>
+							</span>
+							<span>
+								<label>目前状态：</label>
+								<input type="text" class="CurrentState" placeholder="离职/在职"/>
+							</span>
+						</p>
+					</div>
+					<div class="lhq_zbjl_center_three">专业技能</div>
+					<div class="content">
+						<div class="container-fluid">
+							<div id='pad-wrapper'>
+								<div id="editparent">
+									<div id='editControls' class='span12' style='text-align:center; padding:5px;'>
+										<div class='btn-group'>
+											<a class='btn' data-role='undo' href='javascript:;'><i class='icon-undo'></i></a>
+											<a class='btn' data-role='redo' href='javascript:;'><i class='icon-repeat'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='bold' href='javascript:;'><b>Bold</b></a>
+											<a class='btn' data-role='italic' href='javascript:;'><em>Italic</em></a>
+											<a class='btn' data-role='underline' href='javascript:;'><u><b>U</b></u></a>
+											<a class='btn' data-role='strikeThrough' href='javascript:;'><strike>abc</strike></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='justifyLeft' href='javascript:;'><i class='icon-align-left'></i></a>
+											<a class='btn' data-role='justifyCenter' href='javascript:;'><i class='icon-align-center'></i></a>
+											<a class='btn' data-role='justifyRight' href='javascript:;'><i class='icon-align-right'></i></a>
+											<a class='btn' data-role='justifyFull' href='javascript:;'><i class='icon-align-justify'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='indent' href='javascript:;'><i class='icon-indent-right'></i></a>
+											<a class='btn' data-role='outdent' href='javascript:;'><i class='icon-indent-left'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='insertUnorderedList' href='javascript:;'><i class='icon-list-ul'></i></a>
+											<a class='btn' data-role='insertOrderedList' href='javascript:;'><i class='icon-list-ol'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='h1' href='javascript:;'>h<sup>1</sup></a>
+											<a class='btn' data-role='h2' href='javascript:;'>h<sup>2</sup></a>
+											<a class='btn' data-role='p' href='javascript:;'>p</a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='subscript' href='javascript:;'><i class='icon-subscript'></i></a>
+											<a class='btn' data-role='superscript' href='javascript:;'><i class='icon-superscript'></i></a>
+										</div>
+									</div>
+									<div id='editor' class='span12 lhq_onebox' style='' contenteditable>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="lhq_zbjl_center_three">工作经历</div>
+					<div class="content">
+						<div class="container-fluid">
+							<div id='pad-wrapper'>
+								<div id="editparent">
+									<div id='editControls' class='span12' style='text-align:center; padding:5px;'>
+										<div class='btn-group'>
+											<a class='btn' data-role='undo' href='javascript:;'><i class='icon-undo'></i></a>
+											<a class='btn' data-role='redo' href='javascript:;'><i class='icon-repeat'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='bold' href='javascript:;'><b>Bold</b></a>
+											<a class='btn' data-role='italic' href='javascript:;'><em>Italic</em></a>
+											<a class='btn' data-role='underline' href='javascript:;'><u><b>U</b></u></a>
+											<a class='btn' data-role='strikeThrough' href='javascript:;'><strike>abc</strike></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='justifyLeft' href='javascript:;'><i class='icon-align-left'></i></a>
+											<a class='btn' data-role='justifyCenter' href='javascript:;'><i class='icon-align-center'></i></a>
+											<a class='btn' data-role='justifyRight' href='javascript:;'><i class='icon-align-right'></i></a>
+											<a class='btn' data-role='justifyFull' href='javascript:;'><i class='icon-align-justify'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='indent' href='javascript:;'><i class='icon-indent-right'></i></a>
+											<a class='btn' data-role='outdent' href='javascript:;'><i class='icon-indent-left'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='insertUnorderedList' href='javascript:;'><i class='icon-list-ul'></i></a>
+											<a class='btn' data-role='insertOrderedList' href='javascript:;'><i class='icon-list-ol'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='h1' href='javascript:;'>h<sup>1</sup></a>
+											<a class='btn' data-role='h2' href='javascript:;'>h<sup>2</sup></a>
+											<a class='btn' data-role='p' href='javascript:;'>p</a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='subscript' href='javascript:;'><i class='icon-subscript'></i></a>
+											<a class='btn' data-role='superscript' href='javascript:;'><i class='icon-superscript'></i></a>
+										</div>
+									</div>
+									<div id='editor' class='span12 lhq_twobox' style='' contenteditable>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="lhq_zbjl_center_three">工作项目经验</div>
+					<div class="content">
+						<div class="container-fluid">
+							<div id='pad-wrapper'>
+								<div id="editparent">
+									<div id='editControls' class='span12' style='text-align:center; padding:5px;'>
+										<div class='btn-group'>
+											<a class='btn' data-role='undo' href='javascript:;'><i class='icon-undo'></i></a>
+											<a class='btn' data-role='redo' href='javascript:;'><i class='icon-repeat'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='bold' href='javascript:;'><b>Bold</b></a>
+											<a class='btn' data-role='italic' href='javascript:;'><em>Italic</em></a>
+											<a class='btn' data-role='underline' href='javascript:;'><u><b>U</b></u></a>
+											<a class='btn' data-role='strikeThrough' href='javascript:;'><strike>abc</strike></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='justifyLeft' href='javascript:;'><i class='icon-align-left'></i></a>
+											<a class='btn' data-role='justifyCenter' href='javascript:;'><i class='icon-align-center'></i></a>
+											<a class='btn' data-role='justifyRight' href='javascript:;'><i class='icon-align-right'></i></a>
+											<a class='btn' data-role='justifyFull' href='javascript:;'><i class='icon-align-justify'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='indent' href='javascript:;'><i class='icon-indent-right'></i></a>
+											<a class='btn' data-role='outdent' href='javascript:;'><i class='icon-indent-left'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='insertUnorderedList' href='javascript:;'><i class='icon-list-ul'></i></a>
+											<a class='btn' data-role='insertOrderedList' href='javascript:;'><i class='icon-list-ol'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='h1' href='javascript:;'>h<sup>1</sup></a>
+											<a class='btn' data-role='h2' href='javascript:;'>h<sup>2</sup></a>
+											<a class='btn' data-role='p' href='javascript:;'>p</a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='subscript' href='javascript:;'><i class='icon-subscript'></i></a>
+											<a class='btn' data-role='superscript' href='javascript:;'><i class='icon-superscript'></i></a>
+										</div>
+									</div>
+									<div id='editor' class='span12 lhq_threebox' style='' contenteditable>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="lhq_zbjl_center_three">自我评价</div>
+					<div class="content">
+						<div class="container-fluid">
+							<div id='pad-wrapper'>
+								<div id="editparent">
+									<div id='editControls' class='span12' style='text-align:center; padding:5px;'>
+										<div class='btn-group'>
+											<a class='btn' data-role='undo' href='javascript:;'><i class='icon-undo'></i></a>
+											<a class='btn' data-role='redo' href='javascript:;'><i class='icon-repeat'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='bold' href='javascript:;'><b>Bold</b></a>
+											<a class='btn' data-role='italic' href='javascript:;'><em>Italic</em></a>
+											<a class='btn' data-role='underline' href='javascript:;'><u><b>U</b></u></a>
+											<a class='btn' data-role='strikeThrough' href='javascript:;'><strike>abc</strike></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='justifyLeft' href='javascript:;'><i class='icon-align-left'></i></a>
+											<a class='btn' data-role='justifyCenter' href='javascript:;'><i class='icon-align-center'></i></a>
+											<a class='btn' data-role='justifyRight' href='javascript:;'><i class='icon-align-right'></i></a>
+											<a class='btn' data-role='justifyFull' href='javascript:;'><i class='icon-align-justify'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='indent' href='javascript:;'><i class='icon-indent-right'></i></a>
+											<a class='btn' data-role='outdent' href='javascript:;'><i class='icon-indent-left'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='insertUnorderedList' href='javascript:;'><i class='icon-list-ul'></i></a>
+											<a class='btn' data-role='insertOrderedList' href='javascript:;'><i class='icon-list-ol'></i></a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='h1' href='javascript:;'>h<sup>1</sup></a>
+											<a class='btn' data-role='h2' href='javascript:;'>h<sup>2</sup></a>
+											<a class='btn' data-role='p' href='javascript:;'>p</a>
+										</div>
+										<div class='btn-group'>
+											<a class='btn' data-role='subscript' href='javascript:;'><i class='icon-subscript'></i></a>
+											<a class='btn' data-role='superscript' href='javascript:;'><i class='icon-superscript'></i></a>
+										</div>
+									</div>
+									<div id='editor' class='span12 lhq_fourbox' style='' contenteditable>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="lhq_footerlist">
+						<!--<input type="button" value="获取此人联系方式" class="btn btn-primary"/>-->
+						<input type="button" value="发布" class="btn btn-primary lhq_fb" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li class="fl">
+					<a href="javascript:;">联系我们 </a>|
+					<a href="javascript:;">关于我们 </a>|
+					<a href="recruitList.html">咖芒招聘 </a>|
+					<a href="newList.html">咖芒新闻</a>
+				</li>
+				<li class="fr">Copyright© Huaban.com 2016 | 浙B2-20110282 浙ICP备05049240</li>
+			</ul>
+		</div>
+		<script src="../javascripts/jquery.min.js"></script>
+		<script src="../javascripts/bootstrap.min.js"></script>
+		<script src="../javascripts/lhq_bjq.js"></script>
+
+		<script src="../javascripts/common.js"></script>
+
+		<script src="../javascripts/jquery-2.1.1.min.js"></script>
+		<script src="../javascripts/iscroll-zoom.js"></script>
+		<script src="../javascripts/hammer.js"></script>
+		<script src="../javascripts/jquery.photoClip.js"></script>
+		<script src="../javascripts/I_want_to_apply.js"></script>
+		
+		<script src="../javascripts/jquery.base64.js"></script>
+		<script>
+			//图片截取
+		function hua() {
+			tops.style.top = 0
+		}
+
+		function hua2() {
+			tops.style.top = '-800px'
+		}
+		$("#clipArea").photoClip({
+			width: 200,
+			height: 200,
+			file: "#file",
+			view: "#view",
+			ok: "#clipBtn",
+			loadStart: function() {
+				console.log("照片读取中");
+			},
+			loadComplete: function() {
+				console.log("照片读取完成");
+			},
+			clipFinish: function(dataURL) {
+				console.log(dataURL.length)
+				if(dataURL.length<75000){
+					sessionStorage.ainidu = dataURL;
+				}else{
+					layer.msg('图片过大不可提交，请重新选择图片', {
+						time: 1000
+					});
+				}
+
+			}
+		});
+		</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,175 @@
+.djs-wrapper {
+	width: 100%;
+	margin-top: 98px;
+	position: relative;
+	overflow: hidden;
+}
+.djs-nav {
+	width: 85%;
+	margin: 0 auto;
+	box-shadow: 0 0 2px 3px #F2F2F2;
+}
+.djs-navTop {
+	width: 100%;
+	background: white;
+	padding: 30px;
+	overflow: hidden;
+}
+.djs-nav span {
+	height: 100%;
+	float: left;
+	font-size: 16px;
+	position: relative;
+	top: 4px;
+}
+.djs-nav ul {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+.djs-nav ul li {
+	margin: 0 10px 5px 0;
+	float: left;
+	cursor:pointer;
+	line-height: 30px;
+}
+
+.djs-navBottom {
+	width: 100%;
+	background: white;
+	padding: 30px;
+	padding-top: 0;
+	overflow: hidden;
+	display: none;
+}
+
+.djs-px {
+	width: 85%;
+	height: 60px;
+	margin: 0 auto;
+	border-bottom: 4px solid #F0F0F0;
+}
+.djs-px > li {
+	padding: 20px 20px 15px;
+	cursor: pointer;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	font-size: 16px;
+}
+.djs-px > li > ul {
+	width: 120%;
+	background: white;
+	position: absolute;
+	top: 55px;
+	left: 0;
+	display: none;
+	z-index: 9999;
+}
+.djs-px > li > ul > li {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	cursor: pointer;
+}
+.djs-px > li > ul > li:hover {
+	background: #F7F7F7;
+	cursor: pointer;
+}
+
+.djs-list {
+	width: 85%;
+	margin: 0 auto;
+	clear: both;
+}
+.djs-list ul {
+	width: 100%;
+	min-height: 310px;
+	overflow: hidden;
+}
+.djs-list ul li {
+	width: 24%;
+	margin: 20px;
+	margin-left: .5%;
+	margin-right: .5%;
+	background: white;
+	float: left;
+	transition: .3s;
+	-ms-transition: .3s;/*IE*/
+	-moz-transition: .3s; /* Firefox 4 */
+	-webkit-transition: .3s; /* Safari 和 Chrome */
+	-o-transition: .3s; /* Opera */
+}
+.djs-list ul li:hover {
+	box-shadow: 0 3px 2px 2px #E9E9E9;
+	transform: translateY(-3px);
+	-ms-transform: translateY(-3px);/*IE*/
+	-moz-transform: translateY(-3px); /* Firefox 4 */
+	-webkit-transform: translateY(-3px); /* Safari 和 Chrome */
+	-o-transform: translateY(-3px); /* Opera */
+}
+.djs-list ul li a {
+	width: 100%;
+	color: #555555;
+}
+.djs-list ul li a:hover {
+	text-decoration: none;
+	color: #555555;
+}
+.djs-list ul li img {
+	width: 100%;
+	height: 280px;
+	background: blue;
+}
+.djs-list ul li .djs-title {
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	border-top: 1px solid #E9E9E9;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+}
+.djs-list ul li div {
+	width: 15%;
+	height: 1px;
+	margin: 0 auto;
+	background: #E9E9E9;
+}
+.djs-list ul li .djs-price {
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.color {
+	color: #EA5813 !important;
+}
+.djs-t {
+	padding: 5px 20px;
+	position: fixed;
+	left: 40%;
+	top: 50%;
+	background: rgba(0,0,0,.5);
+	color: white;
+	font-size: 18px;
+	opacity: 0;
+	transition: .5s;
+	-ms-transition: .5s;/*IE*/
+	-moz-transition: .5s; /* Firefox 4 */
+	-webkit-transition: .5s; /* Safari 和 Chrome */
+	-o-transition: .5s; /* Opera */
+	transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	-o-transform: scale(0.5);
+}
+.list_loading {
+	width: 20%;
+	position: fixed;
+	top: 60%;
+	left: 40%;
+}
+

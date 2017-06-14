@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>咖芒网</title>
+		<link href="../images/logo.png" rel="shortcut icon"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/rester.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/personalSet.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css"/>
+		<link rel="stylesheet" href="../stylesheets/nav.css" />
+		<script src="../../node_modules/jquery/dist/jquery.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="../javascripts/gVerify.js"></script>
+		<script src="../javascripts/layer/layer.js"></script>
+	<!--[if lt IE 10]>-->
+    <script src="../javascripts/jquery.1.4.4.min.js"></script>
+    <!--<![endif]-->
+				
+		
+		<script src="../javascripts/personalSet.js"></script>
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		<div id="lxm_nav" class="nav_wrapper nav_bg_a">
+				<div class="nav">
+					<div class="nav_logo">
+						<img class="lxm_logo" src="../images/logo.png" alt="" />
+					</div>
+					<div class="nav_list">
+						<ul class="nav_color_a">
+							<li class="nav_one lxm_nav_first"><a class="lxm_first_nav" href="javascript:;">首页</a></li>
+							<li class="nav_one">
+								<a href="javascript:;">设计服务</a><i class="glyphicon glyphicon-triangle-bottom"></i>
+								<div class="nav_hide">
+									<ul class="nav_hide_list">
+										<!--<li><a href="javascript:;">LOGO/品牌</a></li>
+										<li><a href="javascript:;">UI设计</a></li>
+										<li><a href="javascript:;">工业/产品设计</a></li>
+										<li><a href="javascript:;">摄影</a></li>
+										<li><a href="javascript:;">室内设计</a></li>
+										<li><a href="javascript:;">私家定制</a></li>
+										<li><a href="javascript:;">平面设计</a></li>
+										<li><a href="javascript:;">绘画/插画</a></li>
+										<li><a href="javascript:;">影视/动画</a></li>
+										<li><a href="javascript:;">服装设计</a></li>
+										<li><a href="javascript:;">造型设计</a></li>
+										<li><a href="javascript:;">其它</a></li>
+										<li><a href="javascript:;">造型设计</a></li>-->
+									</ul>
+									<div class="nav_title"></div>
+								</div>
+							</li>
+							<li class="nav_one lxm_shejishi"><a href="javascript:;">设计师</a></li>
+						</ul>
+					</div>
+					<div class="nav_right">
+						<div class="nav_search">
+							<input class="search_con" type="text" placeholder="搜索设计服务" />
+							<i class="glyphicon glyphicon-search search_now"></i>
+						</div>
+						<p class="login">登录</p>
+						<p class="res">注册</p>
+						<div class="user" style = 'display: none;'>
+							<img src="../images/40x40.jpg" alt="" />
+							<div class="user_list_wrapper">
+								<div class="user_list">
+									<ul>
+										<li class="user_shop"><a href="javascript:;">个人开店</a></li>
+										<li class="user_data"><a href="javascript:;">个人资料</a></li>
+										<li class="user_out"><a href="javascript:;">退出登录</a></li>
+									</ul>
+									<div class="user_title"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<p class="inter">咖芒网</p>-->
+			<div class="login_wrapper" style="display: none;z-index: 99999;">
+				<div class="login_con">
+					<p>用第三方帐号登录咖芒</p>
+					<i class="glyphicon glyphicon-remove login_remove"></i>
+					
+					<!--第三方-->
+					<div class="other_mode">
+						<div class="tencent"><img src="../images/QQ-1.png" alt="" /></div>
+						<div class="WeChat"><img src="../images/wx-1.png" alt="" /></div>
+					</div>
+					
+					<!--标题-->
+					<div class="login_email">
+						<p></p>
+						<p>使用邮箱号登录咖芒</p>
+						<p></p>
+					</div>
+					
+
+					<div class="login_enter">
+						<!--普通登录-->
+						<div class="login_enter_main" style="display: block;">
+							<input class="lxm_login_one_user" type="text" placeholder="输入邮箱号" />
+							<input class="lxm_login_one_pass" type="password" placeholder="密码" />
+							<div class="login_yzm">
+								
+<div class="yzm_pic" id="lxm_said" style="width: 100px;height: 50px; text-align: center; line-height: 50px; background: url(../images/login_yanzheng.jpg) no-repeat;background-size: cover;font-size: 20px;letter-spacing: 3px;"></div> 
+								<input class="lxm_login_one_yzm" type="text" placeholder="请输入验证码" />
+							</div>
+							<button class="lxm_login_one">登录</button>
+						</div>
+						
+						<!--忘记密码-->
+						<div class="login_enter_forget" style="display: none;">
+							<input type="text" placeholder="输入邮箱号" />
+							密保问题
+							<p>
+								<!--密保问题　-->
+								<select>
+									<option>我的名字</option>
+									<option>我最喜欢的人</option>
+									<option>我的小学校名</option>
+									<option>我的中学校名</option>
+									<option>我的大学校名</option>
+								</select>
+							</p>
+							<p>问题答案　<input type="text" class="resgister_Answer_forget	" placeholder="输入问题答案" /></p>
+							<button class="lxm_login_two">重置</button>
+						</div>
+						
+						<div class="lxm_new_pass" style="display: none;">
+							<p><input class="resgister_pass_new" type="password" placeholder="请输入新密码" /></p>
+							<p><input class="resgister_pass_agin_new" type="password" placeholder="确认密码" /></p>
+							<button>提交</button>
+						</div>
+						
+						<!--注册账号-->
+						<div class="login_enter_resgister" style="display: none;">
+							<input class="lxm_resgister_num" type="text" placeholder="输入邮箱号" />
+							<button class="resgister_list">注册</button>
+						</div>
+						<a href="javascript:;" style="display: none;" class="forget_pass">忘记密码</a><a href="javascript:;" class="resgister_now">立即注册</a><span class="login_user">还没有账号？</span>
+					</div>
+					
+					
+					
+						
+					
+					<!--注册列表-->
+					<div class="resgister" style="display: none;">
+						<img src="../images/logo.png" alt="" />
+						<p></p>
+						<p>欢迎来到咖芒！请完善你的信息</p>
+						<p>账号　<span class="lxm_my_num">17600022763</span></p>
+						<p style="display: none;">昵称　<input class="resgister_user" type="text" placeholder="昵称" /></p>
+						<p>密码　<input class="resgister_pass" type="password" placeholder="设定登录密码" /></p>
+						<p>确认密码　<input class="resgister_pass_agin" type="password" placeholder="请再输入一次登录密码" /></p>
+						<p style="display: none;">
+							密保问题　<select class="resgister_problem">
+								<option>我的名字</option>
+								<option>我最喜欢的人</option>
+								<option>我的小学校名</option>
+								<option>我的中学校名</option>
+								<option>我的大学校名</option>
+							</select>
+						</p>
+						<p style="display: none;">问题答案　<input type="text" class="resgister_Answer" placeholder="输入问题答案" /></p>
+						<p class="lxm_rules"><input class="resgister_Check" type="checkbox" id="aa" /><label for="aa">我已阅读并接受<a class="lxm_Agreement" href="#" target="_blank">《咖芒网免责声明》</a></label></p>
+
+						<button class="register_sub">提交</button>
+						<i class="glyphicon glyphicon-arrow-left resgister_back"></i>
+						<i class="glyphicon glyphicon-remove resgister_remove"></i>
+					</div>
+					
+				</div>
+			</div>
+			
+		<div class="zhj_wrapper">
+		<div class="zhj_Account">账号设置</div>
+		<div class="zhj_padding">
+			
+			<div class="personal">
+				<span class="nickN">昵称：</span>
+				<input type="text" class="form-control nText"/>
+				<span class="nickNText"></span>
+			</div>
+			
+			<div class="add">
+				<span class="addLeft">
+					所在城市：
+				</span>
+				<input type="text" class="form-control addText"/>
+				<span class="addTex">地址精确到市哦！</span>
+			</div>
+			
+			
+			<div class="head">
+				<span class="header">头像：</span>
+				<div class="headImg"  id="view">
+					<img class="upImg"/>
+				</div>
+				<div class="upFileImg">
+					<div class="inputFile">
+					<input type="file" class="img" id="file" style="width: 100%;height: 100%;margin-left: 0%;margin-top: 0%;cursor: pointer;" accept="image/*" name="file" />
+				</div>	
+					<img src="../images/onImg.png" alt="" />
+				</div>
+					<span class="imgText">
+					   <img src="../images/z.gif" alt="" />
+					</span>		
+			</div>
+			
+			<div class="sex">
+				  <span class="sexChange">性别：</span>
+				  <div class="aa">
+				  <input type="radio" class="zhj_sex boy" value="男" name="sex" checked="checked">男
+				  <input type="radio" class="zhj_sex girl" value="女" name="sex"/>女
+				  <input type="radio" class="zhj_sex Preservation
+" value="保密" name="sex"/>保密
+				  </div>
+			</div>
+			
+			<div class="telNum">
+				<span class="telLeft">QQ号：</span>
+				<input type="tel" class="form-control telText"/>
+				<span class="telTex"></span>
+			</div>
+			
+			<div class="pass">
+				<div class="new">
+				<span class="passLeft">当前密码：</span>
+				<input type="password" class="form-control pasText"/>
+				<span class="passO">您的密码</span>
+				</div>
+				<div class="newTwo">
+				<span class="newTwoPas">新密码：</span>
+				<input type="password" class="form-control newTwoText"/>
+				<span class="passTwo">您的新密码</span>
+				</div>
+				<div class="beSure">
+					<span class="beSurePas">确认密码：</span>
+				<input type="password" class="form-control beSureText"/>
+				<span class="passThree">确认您的密码</span>
+				</div>				
+			</div>
+			
+			<div class="baoCun">
+				<button class="xiugai">保存资料</button>		
+		   </div>			
+		</div>							
+		</div>
+		
+		<div class="footer">
+			<ul>
+				<li class="fl">
+					<a href="javascript:;">联系我们 </a>|
+					<a href="javascript:;">关于我们 </a>|
+					<a href="recruitList.html">咖芒招聘 </a>|
+					<a href="newList.html">咖芒新闻</a>
+				</li>
+				<li class="fr">Copyright© Huaban.com 2016 | 浙B2-20110282 浙ICP备05049240</li>
+			</ul>
+		</div>	
+		
+		<div id="tops">
+		<div id="clipArea"></div>		
+		<button id="clipBtn">确定</button>
+		</div>
+		
+		<script src="../javascripts/jquery-2.1.1.min.js"></script>
+		<script src="../javascripts/iscroll-zoom.js"></script>
+		<script src="../javascripts/hammer.js"></script>
+		<script src="../javascripts/jquery.photoClip.js"></script>
+		<script src="../javascripts/jquery.base64.js"></script>
+		<script src="../javascripts/common.js"></script>
+		
+	</body>
+</html>

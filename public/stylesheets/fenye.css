@@ -1,0 +1,24 @@
+.djs-fy {
+	/*width: auto;*/
+	height: 40px;
+	margin: 20px auto;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	left: 45%;
+}
+.djs-fy li {
+	height: 40px;
+	padding: 0 10px;
+	margin: 0 10px;
+	float: left;
+	line-height: 50px;
+	font-size: 16px;
+	list-style: none;
+	cursor:pointer;
+	
+}
+.page {
+	font-weight: bold;
+	color: black;
+}

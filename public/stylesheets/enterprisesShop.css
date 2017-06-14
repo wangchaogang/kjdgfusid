@@ -1,0 +1,616 @@
+.wyhteam_wrapper{
+	width:100%;
+	height:auto;
+	margin-top:120px;
+}
+.wyhteam_body{
+	width:85%;
+	height:auto;
+	margin:0 auto;
+}
+.yu_teamtop{
+	text-align: center;
+	margin-top:30px;
+}
+.yu_teamtop img{
+	width:80px;
+	height:80px;
+	background-size:100% 100%;
+}
+.yu_title{
+	font-size: 22px;
+	text-align: center;
+    color: #444;
+    line-height: 60px;
+    font-weight: 700;
+}
+.yuheader_on{
+	width:100%;
+	height:170px;
+	margin:20px auto 0;
+}
+.yu_teamphoto{
+	width:160px;
+	height:160px;
+	margin-left:30px;
+	background: url(../images/hhou.png) no-repeat center;
+	background-size: 95% 95%;
+}
+.yu_imghead{
+	width:100%;
+	height:100%;
+	border:#E3E3E3 5px solid;
+	background-size: cover;
+	display: inline-block;
+}
+.yu_ontp{ 
+    position: relative;
+    margin:60px 0 0 50px;
+}
+.on_tpfil{
+	width:90px;
+	height:35px;
+	display:block;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: green;
+}
+.yu_ontpbt{
+	width:90px;
+	height:35px;
+}
+.cron_yu{
+	font-size: 14px;
+	color:orangered;
+	width:170px;
+	height:40px;
+	line-height: 40px;
+	position: absolute;
+	top:36px;
+	left:-6px;
+}
+
+#clipArea {
+	height: 100%;
+	/*width:100%*/
+	position: relative;
+}
+#clipBtn {
+	padding:8px 15px;
+	z-index: 999999;
+	position:absolute ;
+	bottom:6%;
+	left:46%;
+}
+.cut_out_text{
+	position: absolute;
+	bottom:1%;
+	left:42%;
+	z-index: 999999;
+	color:white;
+	font-size: 15px;
+}
+#view {
+	margin: 0 auto;
+	width: 160px;
+	height: 160px;
+	background: url(../images/hhou.png) no-repeat center;
+	background-size: 90% 100%;
+}
+#tops{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:-103%;
+	transition: all 0.5s;
+	z-index: 9999;
+}
+
+
+
+
+
+
+
+/*yu_line11*/
+.yu_qiye{
+	width:100%;
+	height:100px;
+	margin-top:15px;
+}    
+.yu_qynn{
+	width:50%;
+	height:100px;
+}
+.yu_qynn lable{
+	width:97%;
+	height:auto;
+	color: #999;
+    font-size: 16px;
+    line-height: 45px;
+    float: left;
+}
+.yu_qyname{
+	width:97%;
+	height: 45px;
+	/*background-color: #fafafa;*/
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 4px 10px;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    resize: none;
+    outline: 0;
+    color:#A9A9A9;
+}
+.yu_qyname,.yu_ads,.yu_qypeoname,.yu_qitel::-webkit-input-placeholder{
+	font-size: 14px;
+}
+.yu_qiyeads{
+	width:50%;
+	height:100px;
+}
+.yu_qiyeads lable{
+	width:97%;
+	height:auto;
+	color: #999;
+    font-size: 16px;
+    line-height: 45px;
+    float: left;
+    margin-left:3%;
+}
+.yu_ads{
+	width:97%;
+	height: 45px;
+	/*background-color: #fafafa;*/
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 4px 10px;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    resize: none;
+    outline: 0;
+    margin-left:3%;
+    color:#A9A9A9;
+}
+/*yu_line22*/
+.yu_qiyepeo{
+	width:100%;
+	height:100px;
+	margin-top:15px;
+}    
+.yu_qypeopl{
+	width:50%;
+	height:100px;
+}
+.yu_qypeopl lable{
+	width:97%;
+	height:auto;
+	color: #999;
+    font-size: 16px;
+    line-height: 45px;
+    float: left;
+}
+.yu_qypeoname{
+	width:97%;
+	height: 45px;
+	/*background-color: #fafafa;*/
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 4px 10px;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    resize: none;
+    outline: 0;
+    color:#A9A9A9;
+}
+.yu_qytel{
+	width:50%;
+	height:100px;
+}
+.yu_qytel lable{
+	width:97%;
+	height:auto;
+	color: #999;
+    font-size: 16px;
+    line-height: 45px;
+    float: left;
+    margin-left:3%;
+}
+.yu_qitel{
+	width:97%;
+	height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    display: inline-block;
+    padding: 4px 10px;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    resize: none;
+    outline: 0;
+    margin-left:3%;
+    color:#A9A9A9;
+}
+/*.yu_idnum .yu_idzheng{
+	width:320px;
+	height:175px;
+	background: #FAFAFA;
+	line-height: 160px;
+	text-align: center;
+	color:#444444;
+	font-size: 17px;
+	border:2px dashed #E3E3E3;
+	margin-top:10px;
+	margin-left:120px;
+}*/
+.yu_idzhengs{ 
+    position: relative;
+}
+.yu_sfzzheng{
+	width:320px;
+	height:175px;
+	display:block;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.imgsfz{
+	width:320px;
+	height:175px;
+	/*position: absolute;
+    top: 0;
+    left: 0;*/
+	/*border:1px solid red;*/
+	background-size: cover;
+	margin-top:10px;
+	margin-left:120px;
+	border:none;
+	/*z-index: -1;*/
+	/*border:2px dashed #E3E3E3;*/
+}
+.sfzztxt{
+	width:320px;
+	height:175px;
+	color:#969696;
+	font-size: 17px;
+	position: absolute;
+	text-align: center;
+	line-height: 188px;
+    top: 0;
+    z-index: -1;
+    margin-top:10px;
+	margin-left:120px;
+	border:1px solid #CCCCCC;
+}
+/*.yu_sfzzbt{
+	width:320px;
+	height:175px;
+	background: white;
+	line-height: 160px;
+	text-align: center;
+	color:#969696;
+	font-size: 17px;
+	border:2px dashed #E3E3E3;
+	margin-top:10px;
+	margin-left:120px;
+	
+	outline: none;
+}*/
+.yu_idnum{
+	width:100%;
+	height:240px;
+	margin:0 auto;
+	padding:15px 0;
+}
+.yu_idnum lable{
+	width:100%;
+	height:40px;
+	color: #999;
+    font-size: 16px;
+    line-height: 40px;
+    float: left;
+    display: block;
+}
+.yu_idxy{
+	width:100%;
+	height:30px;
+	color:#777777;
+	line-height: 20px;
+	font-size: 15px;
+	margin-top:25px;
+}
+/*.wyh_teamthings{
+	width:100%;
+	height:240px;
+	margin:0 auto;
+	padding:15px 0;
+}
+.wyh_teamthings lable{
+	width:100%;
+	height:40px;
+	color: #999;
+    font-size: 16px;
+    line-height: 40px;
+    float: left;
+    display: block;
+}
+.yuon_diy{
+	width:100%;
+	height:150px;
+	border:2px dashed #E3E3E3;
+	background: #FAFAFA;
+}*/
+
+/*.wyh_teamthings{
+	width:100%;
+	height:260px;
+	margin:0 auto;
+	padding:15px 0;
+}
+.wyh_teamthings lable{
+	width:100%;
+	height:40px;
+	color: #999;
+    font-size: 16px;
+    line-height: 40px;
+    float: left;
+    display: block;
+}
+.yuon_diy{
+	width:100%;
+	height:200px;
+	border:2px dashed #E3E3E3;
+	background: #FAFAFA;
+}
+.yuhan_img{
+    position: relative;
+   border:5px solid #E3E3E3;
+    width:150px;
+	height:160px;
+	padding:5px;
+	margin:20px;
+}
+.yuh_pic{
+	width:130px;
+	height:130px;
+	display:block;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.han_imgg{
+	width:130px;
+	height:130px;
+}*/
+
+
+.yuon_diy input{
+	/*text-align: center;
+	line-height: 150px;
+	color:#D7A46B;
+	display: block;
+	font-size: 18px;*/
+}
+.yu_rekuang{
+	width:100%;
+	height:40px;
+	line-height: 50px;
+	margin-top:20px;
+}
+.yu_lab{
+	font-size:14px;
+	font-weight: normal;
+}
+.yu-submit{
+	background: #E62B00;
+	width:100px;
+	height:40px;
+	border-radius: 0;
+	margin-top:10px;
+	font-size: 17px;
+}
+
+.xieyi{
+	font-size: 14px;
+	color:blue;
+	height:auto;
+	line-height: 50px;
+	width:auto;
+	display: block;
+	margin-right:280px;
+}
+.xieyi:hover { 
+	color:blue; 
+} 
+/*提示注册成功*/
+/*.sreatKeys{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	left:0;
+}
+.yu_Popup_window{
+	width:100%;
+	height:100%;
+	margin-left:-50%;
+	margin-top:-50%;
+	position: fixed;
+	top:50%;
+	left:50%;
+	background: chartreuse;
+}*/
+.yu_Popup_window{
+	width: 600px;
+    height: 250px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    top: 31%;
+    left: 29%;
+    display: none; 
+}
+.yu_Popup_window_title{
+	font-size:28px;
+	height:90px;
+	line-height:90px;
+}
+.yu_Popup_window_cont{
+	height:90px;
+	line-height: 90px;
+}
+.yu_Popup_window_keys{
+	display: inline-block;
+	
+}
+.yu_Popup_window_btn{
+	width:70px;
+	height:36px;
+	font-size: 16px;
+	display: inline-block;
+	margin:0 15px;
+}
+/*弹框*/
+.yu_pop-up{
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background: rgba(0,0,0,.5);
+	z-index: 999999999;
+	display: none;
+}
+.yu_pop-up_cont{
+	background: #fff;
+    width: 580px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -220px 0 0 -290px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    border-radius: 1px;
+	
+}
+.yu_reminder{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #EDEDED;
+    position: relative;
+    padding-left: 30px;
+}
+.yu_pop_text{
+	position: relative;
+    padding: 20px 30px;
+}
+.pop_up_content{
+	font-style: normal;
+}
+.info_Yu_text{
+	font-size: 16px;
+    line-height: 30px;
+}
+.icon_yuhan{
+	color:#F6A623;
+	font-size: 27px;
+	display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.yu_freed{
+	margin-top: 15px;
+    color: #777;
+    line-height: 30px;
+}
+.yu_bottom{
+	height: 68px;
+    background: #fafafa;
+    border-top: 1px solid #F2F2F2;
+    position: relative;
+}
+.button_yuhan{
+	position: absolute;
+    right: 30px;
+    top: 15px;
+}
+.yu_pop_sure{
+	font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+}
+.yuhan_ok{
+	font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+}
+.yu_close-btn{
+	position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.yu_close-btn i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+}
+/*加载按钮*/
+.qloading_imgheader{
+	width: 30px;
+    height: 30px;
+    background: gainsboro;
+    position: absolute;
+    top: 3px;
+    left: 104px;
+    background: url(../images/yu_loading.gif) no-repeat center;
+    background-size: cover;
+    display: none;
+}
+.qloading_imglicense{
+	width: 30px;
+    height: 30px;
+    background: gainsboro;
+    position: absolute;
+    top: 72px;
+    left: 268px;
+    background: url(../images/yu_loading.gif) no-repeat center;
+    background-size: cover;
+    display: none;
+}

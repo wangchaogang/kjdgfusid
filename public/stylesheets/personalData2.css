@@ -1,0 +1,349 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.speedNam{
+	float: left;
+	color: #555555;
+	font-size: 18px;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.aaai{
+	margin-top: 5%;
+}
+.speedBtn{
+	width: 15%;
+	height: 35px;
+	line-height: 35px;
+	background: skyblue;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	float: left;
+	border-radius: 2%;
+	margin-top: 5%;
+	margin-left: 30%;
+	cursor: pointer;
+}
+.zhj_wrapper{
+	width: 100%;
+	height: 600px;
+	float: left;
+	background: #F7F7F7;
+	margin-top: 98px;
+	/*border-top: 2px solid #DDDDDD;*/
+}
+.zhj_personTop{
+	width: 85%;
+	height: 250px;
+	border-bottom: 2px solid #555555;
+	/*float: left;*/
+	margin: 0 auto;
+}
+.zhj_personTopImg{
+	width: 140px;
+	height: 140px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 3%;
+	overflow: hidden;
+	border: 1px solid #DDDDDD;
+}
+.zhj_personTopImg .upImg{
+	width: 100%;
+	height: 100%;
+}
+.zhj_personTopImg img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.zhj_personTopName{
+	width: 10%;
+	height: 60px;
+	float: left;
+	margin-top:5.5%;
+	/*color: black;*/
+	color: #555555;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 60px;
+}
+.zhj_xinyu{
+	width: 15%;
+	height: 50px;
+	float: left;
+	margin-top:10%;
+	margin-left: -8%;
+}
+.zhj_xinyu img{
+	width: 20px;
+	height: 20px;
+}
+
+.zhj_reset{
+	width: 3.3%;
+	height: 40px;
+	float: left;
+	margin-top: 8%;
+	margin-left: 33%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	/*color: black;*/
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	background: white;
+	position: relative;
+}
+.zhj_reset i{
+	color: #555555;
+}
+.zhj_shop i{
+	color: #555555;
+}
+.zhj_shop{
+	width: 3.3%;
+	height: 40px;
+	float: left;
+	margin-top: 8%;
+	margin-left: 2%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	/*color: black;*/
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	background: white;
+	position: relative;
+}
+.zhj_hoverShop{
+	width: 350%;
+	height: 40px;
+	background: white;
+	position: absolute;
+	top: -50px;
+	left: -30px;	
+	border: 1px solid #DDDDDD;
+	box-shadow: 3px 3px 8px #DDDDDD;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.zhj_personShop{
+	width: 100%;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	/*color: black;*/
+	cursor: pointer;
+	font-size: 16px;
+}
+.zhj_hoverReset{
+	width: 350%;
+	height: 40px;
+	background: white;
+	position: absolute;
+	top: -50px;
+	left: -70px;	
+	border: 1px solid #DDDDDD;
+	box-shadow: 3px 3px 8px #DDDDDD;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.zhj_personReset{
+	width: 100%;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	/*color: black;*/
+	cursor: pointer;
+	font-size: 16px;
+}
+.zhj_personShop{
+	width: 100%;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	/*color: black;*/
+	font-size: 16px;
+	cursor: pointer;
+}
+.zhj_aline{
+	width: 0.1%;
+	height: 130px;
+	float: left;
+	background: #DDDDDD;
+	margin-top: 7%;
+	margin-left: 2.2%;
+}
+.zhj_authentication{
+	width: 10%;
+	height: 60px;
+	float: left;
+	margin-top: 8.5%;
+	margin-left: 2%;
+}
+.zhj_authentication i{
+	font-size: 16px;
+	color: #555555;
+}
+.zhj_authentication span{
+	font-size: 15px;
+	margin-left: 2%;
+}
+.zhj_notCertified{
+	width: 10%;
+	height: 60px;
+	float: left;
+	margin-top: 8.5%;
+	margin-left: 1%;
+	text-align: right;
+}
+.zhj_notCertified i{
+	font-size: 16px;
+	color:#555555;
+}
+.zhj_notCertified span{
+	font-size: 15px;
+	margin-left: 2%;
+}
+.zhj_myType{
+	width: 85%;
+	height: 50px;
+	border-bottom:#DDDDDD 2px solid;
+	margin: 0 auto;
+}
+.zhj_Release{
+	width: 10%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	cursor: pointer;
+	float: left;
+}
+
+.zhj_Releases{
+	width: 85%;
+	min-height:100%;
+	margin: 0 auto;
+	margin-top: 1%;
+	border: 1px solid #DDDDDD;
+	background: white;
+	margin-bottom: 1%;
+	padding-bottom: 2%;
+	overflow: hidden;
+}
+.zhj_myRelease{
+	width: 100%;
+	height: 40px;
+	color: #555555;
+	font-size: 16px;
+	line-height: 40px;
+	text-indent: 2%;
+	float: left;
+}
+.zhj_Modular{
+	width: 22%;
+	height: 280px;
+	float: left;
+	margin-left: 2.4%;
+	border: 1px solid #DDDDDD;
+
+	border-radius:2px;
+	margin-top:1%;
+}
+.zhj_jiajia{
+	width: 20%;
+	height: 275px;
+	float: left;
+	margin-left: 2%;
+	border: 1px solid #DDDDDD;
+	border-radius:2px;
+	margin-top:1%;
+	font-size: 30px;
+}
+.zhj_jiajia img{
+	width:200px;
+	height:200px;
+	margin-left: 3%;
+	margin-top: 10%;
+}
+.zhj_ModularImg{
+	width: 100%;
+	height: 160px;
+	float: left;	
+
+}
+.zhj_ModularImg img{
+	width: 100%;
+	height: 100%;
+	border-radius:2px;
+}
+.zhj_Title{
+	width: 80%;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	float: left;
+	margin-left: 10%;
+	margin-top: 5%;
+	color:rgba(0,0,0,0.7);
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;	
+}
+.zhj_price{
+	width: 80%;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	float: left;
+	margin-left: 10%;
+	margin-top: 5%;
+	color:rgba(0,0,0,0.7);
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;	
+}
+.zhj_ModularUp{
+	width: 20%;
+	height: 275px;
+	float: left;
+	margin-left: 2%;
+	border: 1px solid #555555;
+	border-radius:2px;
+	text-align: center;	
+	margin-top: 1%;
+}
+.zhj_ModularUp i{
+	font-size: 50px;
+	margin-top: 35%;
+	/*float: left;*/
+	color:#555555;
+}
+.zhj_ModularUp span{
+	display: inline-block;
+	width: 100%;
+	color: #555555;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 25%;	
+}
+
+/*提现*/
+body,html{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.allFB{
+	width: 100%;
+	height:auto;
+	float: left;
+}
+
+

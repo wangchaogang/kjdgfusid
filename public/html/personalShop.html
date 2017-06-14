@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>咖芒网</title>
+		<link href="../images/logo.png" rel="shortcut icon"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/rester.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/personalShop.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap-select.css"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+		<script src="../../node_modules/jquery/dist/jquery.js"></script>
+
+		<script src="../javascripts/jquery-2.1.1.min.js"></script>
+		<script src="../javascripts/iscroll-zoom.js"></script>
+		<script src="../javascripts/hammer.js"></script>
+		<script src="../javascripts/jquery.photoClip.js"></script>
+
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="../javascripts/personalShop.js"></script>
+		<script src="../javascripts/gVerify.js"></script>
+		<script src="../javascripts/layer/layer.js"></script>
+		<script src="../javascripts/jquery.base64.js"></script>
+		<script src="../javascripts/bootstrap-select.js"></script>
+		
+		<!--[if lt IE 10]>-->
+    	<!--<script src="../javascripts/jquery.1.4.4.min.js"></script>-->
+    	<!--<![endif]-->
+    	
+	</head>
+	<body>
+		<div id="lxm_nav" class="nav_wrapper nav_bg_a">
+				<div class="nav">
+					<div class="nav_logo">
+						<img class="lxm_logo" src="../images/logo.png" alt="" />
+					</div>
+					<div class="nav_list">
+						<ul class="nav_color_a">
+							<li class="nav_one lxm_nav_first"><a class="lxm_first_nav" href="#">首页</a></li>
+							<li class="nav_one">
+								<a href="#">设计服务</a><i class="glyphicon glyphicon-triangle-bottom"></i>
+								<div class="nav_hide">
+									<ul class="nav_hide_list">
+										<!--<li><a href="#">LOGO/品牌</a></li>
+										<li><a href="#">UI设计</a></li>
+										<li><a href="#">工业/产品设计</a></li>
+										<li><a href="#">摄影</a></li>
+										<li><a href="#">室内设计</a></li>
+										<li><a href="#">私家定制</a></li>
+										<li><a href="#">平面设计</a></li>
+										<li><a href="#">绘画/插画</a></li>
+										<li><a href="#">影视/动画</a></li>
+										<li><a href="#">服装设计</a></li>
+										<li><a href="#">造型设计</a></li>
+										<li><a href="#">其它</a></li>
+										<li><a href="#">造型设计</a></li>-->
+									</ul>
+									<div class="nav_title"></div>
+								</div>
+							</li>
+							<li class="nav_one lxm_shejishi"><a href="#">设计师</a></li>
+						</ul>
+					</div>
+					<div class="nav_right">
+						<div class="nav_search">
+							<input class="search_con" type="text" placeholder="搜索设计服务" />
+							<i class="glyphicon glyphicon-search search_now"></i>
+						</div>
+						<p class="login">登录</p>
+						<p class="res">注册</p>
+						<div class="user" style = 'display: none;'>
+							<img src="../images/40x40.jpg" alt="" />
+							<div class="user_list_wrapper">
+								<div class="user_list">
+									<ul>
+										<li class="user_shop"><a href="#">个人开店</a></li>
+										<li class="user_data"><a href="#">个人资料</a></li>
+										<li class="user_out"><a href="#">退出登录</a></li>
+									</ul>
+									<div class="user_title"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<p class="inter">咖芒网</p>-->
+			<div class="login_wrapper" style="display: none;z-index: 99999;">
+				<div class="login_con">
+					<p>用第三方帐号登录咖芒</p>
+					<i class="glyphicon glyphicon-remove login_remove qwe"></i>
+					
+					<!--第三方-->
+					<div class="other_mode">
+						<div class="tencent"><img src="../images/QQ-1.png" alt="" /></div>
+						<div class="WeChat"><img src="../images/wx-1.png" alt="" /></div>
+					</div>
+					
+					<!--标题-->
+					<div class="login_email">
+						<p></p>
+						<p>用邮箱/手机号登录咖芒</p>
+						<p></p>
+					</div>
+					
+
+					<div class="login_enter">
+						<!--普通登录-->
+						<div class="login_enter_main" style="display: block;">
+							<input class="lxm_login_one_user" type="text" placeholder="输入邮箱号" />
+							<input class="lxm_login_one_pass" type="password" placeholder="密码" />
+							<div class="login_yzm">
+								<div class="yzm_pic" id="lxm_said" style="width: 100px;height: 50px; text-align: center; line-height: 50px; background: url(../images/login_yanzheng.jpg) no-repeat;background-size: cover;font-size: 20px;letter-spacing: 3px;"></div> 
+								<input class="lxm_login_one_yzm" type="text" placeholder="请输入验证码" />
+							</div>
+							<button class="lxm_login_one">登录</button>
+						</div>
+						
+						<!--忘记密码-->
+						<div class="login_enter_forget" style="display: none;">
+							<input type="text" placeholder="输入邮箱号" />
+							密保问题
+							<p>
+								<!--密保问题　-->
+								<select>
+									<option>我的名字</option>
+									<option>我最喜欢的人</option>
+									<option>我的小学校名</option>
+									<option>我的中学校名</option>
+									<option>我的大学校名</option>
+								</select>
+							</p>
+							<p>问题答案　<input type="text" class="resgister_Answer_forget	" placeholder="输入问题答案" /></p>
+							<button class="lxm_login_two">重置</button>
+						</div>
+						
+						<div class="lxm_new_pass" style="display: none;">
+							<p><input class="resgister_pass_new" type="password" placeholder="请输入新密码" /></p>
+							<p><input class="resgister_pass_agin_new" type="password" placeholder="确认密码" /></p>
+							<button>提交</button>
+						</div>
+						
+						<!--注册账号-->
+						<div class="login_enter_resgister" style="display: none;">
+							<input class="lxm_resgister_num" type="text" placeholder="输入邮箱号" />
+							<button class="resgister_list">注册</button>
+						</div>
+						<a href="#" style="display: none;" class="forget_pass">忘记密码</a><a href="#" class="resgister_now">立即注册</a><span class="login_user">还没有账号？</span>
+					</div>
+					
+					
+					
+						
+					
+					<!--注册列表-->
+					<div class="resgister" style="display: none;">
+						<img src="../images/logo.png" alt="" />
+						<p></p>
+						<p>欢迎来到咖芒！请完善你的信息</p>
+						<p>账号　<span class="lxm_my_num">17600022763</span></p>
+						<p style="display: none;">昵称　<input class="resgister_user" type="text" placeholder="昵称" /></p>
+						<p>密码　<input class="resgister_pass" type="password" placeholder="设定登录密码" /></p>
+						<p>确认密码　<input class="resgister_pass_agin" type="password" placeholder="请再输入一次登录密码" /></p>
+						<p style="display: none;">
+							密保问题　<select class="resgister_problem">
+								<option>我的名字</option>
+								<option>我最喜欢的人</option>
+								<option>我的小学校名</option>
+								<option>我的中学校名</option>
+								<option>我的大学校名</option>
+							</select>
+						</p>
+						<p style="display: none;">问题答案　<input type="text" class="resgister_Answer" placeholder="输入问题答案" /></p>
+						<p class="lxm_rules"><input class="resgister_Check" type="checkbox" id="aa" /><label for="aa">我已阅读并接受<a href="#">《咖芒网免责声明》</a></label></p>
+						<button class="register_sub">提交</button>
+						<i class="glyphicon glyphicon-arrow-left resgister_back"></i>
+						<i class="glyphicon glyphicon-remove resgister_remove"></i>
+					</div>
+					
+				</div>
+			</div>
+		
+		<div class="wyh_content" style="background: #FAFAFA; margin-top:0;">
+			<!--内容-->
+			<div class="wyh_body" >
+				<div class="yu_muse">
+					<img src="../images/logo.png" alt="" />
+					<h1>申请入驻咖芒</h1>
+				</div>
+				<div class="wyh_form">
+					<div class="yu_linea">
+						<div class="yu_fileda fl">
+							<lable>昵称</lable><br />
+							<input name="name" value="" type="text" id="yu_nickname" class="yu_nickname" placeholder="请输入您的昵称" />
+						</div>
+						<div class="yu_filedb fl">
+							<lable>设计领域</lable><br />
+							<select id="id_select" class="selectpicker bla bla bli topp" multiple data-live-search="false" >
+							   <option class="ssa"></option>
+							   <option class="ssb"></option>
+							   <option class="ssc"></option>
+							   <option class="ssd"></option>
+							   <option class="sse"></option>
+							   <option class="ssf"></option>
+							   <option class="ssg"></option>
+							   <option class="ssh"></option>
+							   <option class="ssi"></option>
+							   <option class="ssj"></option>
+							   <option class="ssk"></option>
+							   <option class="ssl"></option>
+							   <option class="ssm"></option>
+								<!--<option>UI设计师</option>
+							    <option>平面设计师</option>
+							    <option>摄影师</option>
+							    <option>插画师</option>
+							    <option>漫画师</option>
+							    <option>动画师</option>
+							    <option>家居设计师</option>
+							    <option>室内设计师</option>
+							    <option>建筑设计师</option>
+							    <option>服装设计师</option>
+							    <option>工业设计师</option>
+							    <option>造型师</option>
+							    <option>游戏美术师</option>
+							    <option>手工艺人</option>-->
+							    </optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="yu_lineb">
+						<div class="yu_truename fl">
+							<lable>真实姓名</lable><br />
+							<input name="name" type="text" value="" id="yu_tname" class="yu_tname" placeholder="请输入您的真实姓名" />
+						</div>
+						<div class="yu_getemail fl">
+							<lable>邮箱</lable><br />
+							<input name="name" type="email" id="yu_email" class="yu_email fl" placeholder="请输入您的邮箱地址" />
+						</div>
+					</div>
+					<div class="yu_linec">
+						<div class="yu_telephone fl">
+							<lable>联系方式</lable><br />
+							<input name="name" type="text" id="yu_telhao" class="yu_telhao" placeholder="请输入真实有效的手机号" />
+						</div>
+						<div class="yu_qq fl">
+							<lable>QQ</lable><br />
+							<input name="name" type="text" id="yu_qqhao" class="yu_qqhao" placeholder="请输入真实有效的QQ号" />
+						</div>
+					</div>
+					<div class="yu_lined">
+						<lable>个人介绍</lable><br />
+						<textarea  class="yu_person" id="yu_person" name="" rows="" cols=""placeholder="请务必填写客观描述，比如您的职业经理，参与的项目，取得的成就、奖项等。"></textarea>
+					</div>
+					<div class="yu_chioces">
+						<button class="yu_ger fl" id="geren_single">个人</button>
+						<button class="yu_tuand fl" id="team_single">团队</button>
+						<button class="yu_qiye fl" id="qiye_single">企业</button>
+					</div>
+					<!--个人-->
+					<div id="peopl_gr" class="peopl_gr">
+						<div class="yu_perheader">
+							<div class="yu_imgon fl">
+								<img src="../images/hhou.png" class="yu_imghead"  alt="" />
+								<!--<span>删除</span>-->
+							</div>
+							<div class="yu_ontp fl cur">
+								<input class="on_tpfil cur lxm_laji" id="on_tpfil" type="file" accept="image/x-png,image/gif,image/jpeg">
+								<input type="button" value="上传头像" class="btn btn-info yu_ontpbt cur "/>
+								<img class="lxm_load_one" src="../images/yu_loading.gif" alt="" />
+							</div>
+							
+						</div>
+						
+						<div class="wyh_teamthings" id="kabosu">
+							<lable >上传个人作品（不少于5个）：&nbsp;</lable>
+							<div class="yuon_diy fl">
+								<div class="yuhan_img ">
+							        <input class="yuh_pic cur lxm_zlaji" id="yuh_pic" type="file" accept="image/x-png,image/gif,image/jpeg">
+							        <img src="../images/onImg.png" class="han_imgg cur">
+							        <div class="lxm_load_two">
+							        	<img class="" src="../images/yu_loading.gif" alt="" />	
+							        </div>
+							        <!--<span class="yuhan_img_remove"><i class="glyphicon glyphicon-remove"></i></i></span>-->	
+							    </div>
+							    <!--<div class="yuhan_img ">
+							        <input multiple class="yuh_pic cur" type="file">
+							        <img src="../images/onImg.png" class="han_imgg cur">
+							    </div>-->
+							</div>
+						</div>
+						
+						<div class="yu_detail">
+							<div class="yu_adress fl">
+								<lable>地址</lable><br />
+								<input name="name" type="text" class="yu_ads" id="yu_ads" placeholder="请输入您的地址" />
+							</div>
+							<div class="yu_shenfen fl">
+								<lable>身份证号</lable><br />
+								<input name="name" type="text" class="yu_idhao" id="yu_idhao" placeholder="请输入真实的身份证号码" />
+							</div>
+						</div>
+						<div class="yu_idnums">
+							<lable>身份证照片：&nbsp;</lable>
+							<div class="yu_idzhengs fl cur">
+								<input type="file" class="yu_sfzzheng cur lxm_why_one" id="yu_sfzzheng" />
+								<button class="yu_sfzzbt cur">上传身份证正面照</button>
+								<img class="yu_sfzzheng_top" src="" alt="" />
+								<div class="lxm_load_three">
+							        <img class="" src="../images/yu_loading.gif" alt="" />	
+							    </div>
+							</div>
+							<div class="yu_idfans fl cur">
+								<input type="file" class="yu_sfzfan cur lxm_why_two" id="yu_sfzfan" />
+								<button class="yu_sfzfbt cur">上传身份证反面照</button>
+								<img class="yu_sfzzheng_bottom" src="" alt="" />
+								<div class="lxm_load_four">
+							        <img class="" src="../images/yu_loading.gif" alt="" />	
+							    </div>
+							</div>
+							<p class="yu_idxys fl">为了保证您和雇主的合法权益，我们需要您提供身份证信息，请务必上传真实有效的身份证扫描件。	我们会为您保密，并承诺不用于其它用途。</p>
+						</div>
+						
+						<!--审核-->
+						<div class="gr_sh">
+							<div class="yu_rekuang">
+								<input type="checkbox" name="Pages" value="Jobg" id="Jobg" >
+								<label for="Jobg" class="yu_lab cur" id="yu_lab">我保证作品的原创性，上传的图片没有法律纠纷，我对因虚假资料或图片版权引起的法律纠纷负全部责任。</label>
+								详情查看<a href="Agreement.html" target="_blank" class="xieyi">《用户服务协议》</a>
+							</div>
+							<div class="button_u">
+								<button class="btn btn-danger yu-submit" id="yu-submit">提交审核</button>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!--团队-->
+					<div class="yu_aboutTeam" id="yu_aboutTeam">
+						<div class="yu_teamName " id="yu_teamkey" style="opacity: 0;">
+							<lable>团队名称：</lable>
+							<input name="name" type="text" class="yu_tName fl" id="yu_tName" placeholder="请输入团队名称" />
+						</div>
+						<div class="yu_teamkey " id="yu_teamkey">
+							<lable>团队密钥：</lable>
+							<input name="name" type="text" class="yu_tkyes fl" id="yu_tkyes" placeholder="请输入团队密钥" />
+						</div>
+						<!--审核-->
+						<div class="team_sh">
+							<div class="yu_rekuangt">
+								<input type="checkbox" name="Pages" value="Jobt" id="Jobt" >
+								<label for="Jobt" class="yu_labt cur" id="yu_labt">我保证作品的原创性，上传的图片没有法律纠纷，我对因虚假资料或图片版权引起的法律纠纷负全部责任。</label>
+								详情查看<a href="Agreement.html" target="_blank" class="xieyi">《用户服务协议》</a>
+							</div>
+							<div class="button_ut">
+								<button class="btn btn-danger yu-submitt" id="yu-submitt">提交审核</button>
+							</div>
+						</div>
+					</div>
+					
+					<!--企业密钥-->
+					<div class="yu_aboutQiye" id="yu_aboutQiye">
+						<div class="yu_qiyeName " id="yu_qiyeName" style="opacity: 0;">
+							<lable>企业名称：</lable>
+							<input name="name" type="text" class="yu_qName fl" id="yu_qName" placeholder="请输入企业名称" />
+						</div>
+						<div class="yu_qiyekey " id="yu_qiyekey">
+							<lable>企业密钥：</lable>
+							<input name="name" type="text" class="yu_qikyes fl" id="yu_qikyes" placeholder="请输入企业密钥" />
+						</div>
+						<!--审核-->
+						<div class="qiye_sh">
+							<div class="yu_rekuangq">
+								<input type="checkbox" name="Pages" value="Jobq" id="Jobq" >
+								<label for="Jobq" class="yu_labq cur" id="yu_labq">我保证作品的原创性，上传的图片没有法律纠纷，我对因虚假资料或图片版权引起的法律纠纷负全部责任。</label>
+								详情查看 <a href="Agreement.html" target="_blank" class="xieyi">《用户服务协议》</a>
+							</div>
+							<div class="button_uq">
+								<button class="btn btn-danger yu-submitq" id="yu-submitq">提交审核</button>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+				<!--<div class="yu_rekuang">
+					<input class="yu_rekuang_check" type="checkbox" name="Pages" value="Job" id="Job" >
+
+					<label for="Job" class="yu_lab cur" id="yu_lab">我保证作品的原创性，上传的图片没有法律纠纷，我对因虚假资料或图片版权引起的法律纠纷负全部责任。</label>
+				</div>
+				<div class="button_u">
+					<button class="btn btn-danger yu-submit" id="yu-submit" disabled="disabled">提交审核</button>
+				</div>-->
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li class="fl">
+					<a href="javascript:;">联系我们 </a>|
+					<a href="javascript:;">关于我们 </a>|
+					<a href="recruitList.html">咖芒招聘 </a>|
+					<a href="newList.html">咖芒新闻</a>
+				</li>
+				<li class="fr">Copyright Huaban.com 2016 | 浙B2-20110282 浙ICP备05049240</li>
+			</ul>
+		</div>
+		<div id="tops" style="display: none;">
+			<div id="clipArea"></div>
+			<button class="btn btn-primary" id="clipBtn">确定</button>
+		</div>
+		<script src="../javascripts/common.js"></script>
+	</body>
+</html>
+	

@@ -1,0 +1,19 @@
+body,textarea,input,select,option{font-family: "微软雅黑";}
+body{background:#FAFAFA;color:#555555;font-size:20px;}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,textarea,input,select,option,form{margin:0}
+body,th,td,ul,ol,textarea,input,select,option{padding:0}
+a{text-decoration:none;color:#333}a,textarea,input{outline:none}
+textarea{overflow:auto;resize:none}
+table{border-collapse:collapse}
+/*li{list-style:none}*/
+a img{border:none}
+
+.fl{float:left}.fr{float:right}
+.clear{clear:both;height:0;overflow:hidden}
+.clears:before,.clears:after{content:'';display:table}
+.clears:after{clear:both}.clears{zoom:1}
+.img img{display:block}label,label input{vertical-align:middle}
+.btn{cursor:pointer;border:none}
+.rel{position:relative}
+.abs{position:absolute}
+.cur{cursor: pointer;}

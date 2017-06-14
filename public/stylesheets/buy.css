@@ -1,0 +1,132 @@
+.djs-wrapper {
+	width: 85%;
+	margin: 98px auto 0;
+}
+.djs-title {
+	width: 100%;
+	padding: 30px 20px 20px;
+	background: white;
+	font-size: 18px;
+	color: #777777;
+	font-weight: bold;
+	border-bottom: 1px solid #EDEDED;
+}
+.djs-content {
+	width: 100%;
+	padding: 20px;
+	background: #FAFAFA;
+	overflow: hidden;
+}
+.djs-content .djs-left {
+	width: 75%;
+	border-right: 1px solid #D8D8D8;
+}
+.djs-content .djs-left img {
+	width: 150px;
+	height: 150px;
+	background: blue;
+}
+.djs-content .djs-left .djs-text {
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.djs-content .djs-left .djs-text h4 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #222222;
+}
+.djs-content .djs-left .djs-text .djs-price {
+	margin-top: 20px;
+	color: #222222;
+}
+.djs-content .djs-left .djs-text .djs-name {
+	margin-top: 10px;
+	font-size: 16px;
+}
+.djs-content .djs-left .djs-text .djs-name span:nth-child(1) {
+	color: #999999;
+}
+.djs-content .djs-left .djs-text .djs-name span:nth-child(2) {
+	color: #C0A75E;
+}
+.djs-content .djs-left .djs-pr {
+	margin-right: 20px;
+	color: #3C90DC; 
+	font-size: 20px;
+	font-weight: bold;
+}
+.djs-right {
+	width: 25%;
+}
+.djs-right div {
+	width: 100%;
+	padding: 0 20px;
+	font-size: 16px;
+	color: #777777;
+	display: flex;
+	justify-content: space-between;
+}
+
+.djs-claim {
+	width: 100%;
+	min-height: 210px;
+	background: white;
+	border-top: 1px solid #EDEDED;
+}
+.djs-claimTitle {
+	width: 80%;
+	margin: 20px auto 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+.djs-claim > input {
+	width: 80%;
+	height: 40px;
+	padding: 10px;
+	margin: 10px auto;
+	display: block;
+	background: #FAFAFA;
+	outline: none;
+	border: 1px solid #E3E3E3;
+}
+.djs-claim textarea {
+	width: 80%;
+	height: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	display: block;
+	background: #FAFAFA;
+	outline: none;
+	border: 1px solid #E3E3E3;
+}
+.djs-claim p {
+	width: 80%;
+	margin: 10px auto 0;
+	font-size: 14px;
+}
+.djs-claim p input {
+	margin-left: 10px;
+}
+.djs-button {
+	width: 80%;
+	margin: 20px auto 0;
+	padding-bottom: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.djs-button button {
+	width: 15%;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	float: right;
+	border-radius: 5px;
+}
+.djs-button button:nth-child(2) {
+	background: white;
+}
+
+
+

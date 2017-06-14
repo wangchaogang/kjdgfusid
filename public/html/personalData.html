@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<title>咖芒网</title>
+		<link href="../images/logo.png" rel="shortcut icon"/>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/rester.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/personalData.css"/>
+		<link rel="stylesheet" href="../stylesheets/nav.css" />
+		<script src="../../node_modules/jquery/dist/jquery.js"></script>
+		<script src="../javascripts/gVerify.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="../javascripts/personalData.js"></script>
+		<script src="../javascripts/layer/layer.js"></script>
+	<!--[if lt IE 10]>-->
+    <!--<script src="../javascripts/jquery.1.4.4.min.js"></script>-->
+    <!--<![endif]-->
+		<!--<script src="../javascripts/jquery-1.8.0.js"></script>-->
+		
+	</head>
+	<body>
+		<div id="lxm_nav" class="nav_wrapper nav_bg_a">
+				<div class="nav">
+					<div class="nav_logo">
+						<img class="lxm_logo" src="../images/logo.png" alt="" />
+					</div>
+					<div class="nav_list">
+						<ul class="nav_color_a">
+							<li class="nav_one lxm_nav_first"><a class="lxm_first_nav" href="javascript:;">首页</a></li>
+							<li class="nav_one">
+								<a href="javascript:;">设计服务</a><i class="glyphicon glyphicon-triangle-bottom"></i>
+								<div class="nav_hide">
+									<ul class="nav_hide_list">
+										<!--<li><a href="javascript:;">LOGO/品牌</a></li>
+										<li><a href="javascript:;">UI设计</a></li>
+										<li><a href="javascript:;">工业/产品设计</a></li>
+										<li><a href="javascript:;">摄影</a></li>
+										<li><a href="javascript:;">室内设计</a></li>
+										<li><a href="javascript:;">私家定制</a></li>
+										<li><a href="javascript:;">平面设计</a></li>
+										<li><a href="javascript:;">绘画/插画</a></li>
+										<li><a href="javascript:;">影视/动画</a></li>
+										<li><a href="javascript:;">服装设计</a></li>
+										<li><a href="javascript:;">造型设计</a></li>
+										<li><a href="javascript:;">其它</a></li>
+										<li><a href="javascript:;">造型设计</a></li>-->
+									</ul>
+									<div class="nav_title"></div>
+								</div>
+							</li>
+							<li class="nav_one lxm_shejishi"><a href="javascript:;">设计师</a></li>
+						</ul>
+					</div>
+					<div class="nav_right">
+						<div class="nav_search">
+							<input class="search_con" type="text" placeholder="搜索设计服务" />
+							<i class="glyphicon glyphicon-search search_now"></i>
+						</div>
+						<p class="login">登录</p>
+						<p class="res">注册</p>
+						<div class="user" style = 'display: none;'>
+							<img src="../images/40x40.jpg" alt="" />
+							<div class="user_list_wrapper">
+								<div class="user_list">
+									<ul>
+										<li class="user_shop"><a href="javascript:;">个人开店</a></li>
+										<li class="user_data"><a href="javascript:;">个人资料</a></li>
+										<li class="user_out"><a href="javascript:;">退出登录</a></li>
+									</ul>
+									<div class="user_title"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<p class="inter">咖芒网</p>-->
+			<div class="login_wrapper" style="display: none;z-index: 99999;">
+				<div class="login_con">
+					<p>用第三方帐号登录咖芒</p>
+					<i class="glyphicon glyphicon-remove login_remove"></i>
+					
+					<!--第三方-->
+					<div class="other_mode">
+						<div class="tencent"><img src="../images/QQ-1.png" alt="" /></div>
+						<div class="WeChat"><img src="../images/wx-1.png" alt="" /></div>
+					</div>
+					
+					<!--标题-->
+					<div class="login_email">
+						<p></p>
+						<p>使用邮箱号登录咖芒</p>
+						<p></p>
+					</div>
+					
+
+					<div class="login_enter">
+						<!--普通登录-->
+						<div class="login_enter_main" style="display: block;">
+							<input class="lxm_login_one_user" type="text" placeholder="输入邮箱号" />
+							<input class="lxm_login_one_pass" type="password" placeholder="密码" />
+							<div class="login_yzm">
+								
+<div class="yzm_pic" id="lxm_said" style="width: 100px;height: 50px; text-align: center; line-height: 50px; background: url(../images/login_yanzheng.jpg) no-repeat;background-size: cover;font-size: 20px;letter-spacing: 3px;"></div> 
+								<input class="lxm_login_one_yzm" type="text" placeholder="请输入验证码" />
+							</div>
+							<button class="lxm_login_one">登录</button>
+						</div>
+						
+						<!--忘记密码-->
+						<div class="login_enter_forget" style="display: none;">
+							<input type="text" placeholder="输入邮箱号" />
+							密保问题
+							<p>
+								<!--密保问题　-->
+								<select>
+									<option>我的名字</option>
+									<option>我最喜欢的人</option>
+									<option>我的小学校名</option>
+									<option>我的中学校名</option>
+									<option>我的大学校名</option>
+								</select>
+							</p>
+							<p>问题答案　<input type="text" class="resgister_Answer_forget	" placeholder="输入问题答案" /></p>
+							<button class="lxm_login_two">重置</button>
+						</div>
+						
+						<div class="lxm_new_pass" style="display: none;">
+							<p><input class="resgister_pass_new" type="password" placeholder="请输入新密码" /></p>
+							<p><input class="resgister_pass_agin_new" type="password" placeholder="确认密码" /></p>
+							<button>提交</button>
+						</div>
+						
+						<!--注册账号-->
+						<div class="login_enter_resgister" style="display: none;">
+							<input class="lxm_resgister_num" type="text" placeholder="输入邮箱号" />
+							<button class="resgister_list">注册</button>
+						</div>
+						<a href="javascript:;" style="display: none;" class="forget_pass">忘记密码</a><a href="javascript:;" class="resgister_now">立即注册</a><span class="login_user">还没有账号？</span>
+					</div>
+					
+					
+					
+						
+					
+					<!--注册列表-->
+					<div class="resgister" style="display: none;">
+						<img src="../images/logo.png" alt="" />
+						<p></p>
+						<p>欢迎来到咖芒！请完善你的信息</p>
+						<p>账号　<span class="lxm_my_num">17600022763</span></p>
+						<p style="display: none;">昵称　<input class="resgister_user" type="text" placeholder="昵称" /></p>
+						<p>密码　<input class="resgister_pass" type="password" placeholder="设定登录密码" /></p>
+						<p>确认密码　<input class="resgister_pass_agin" type="password" placeholder="请再输入一次登录密码" /></p>
+						<p style="display: none;">
+							密保问题　<select class="resgister_problem">
+								<option>我的名字</option>
+								<option>我最喜欢的人</option>
+								<option>我的小学校名</option>
+								<option>我的中学校名</option>
+								<option>我的大学校名</option>
+							</select>
+						</p>
+						<p style="display: none;">问题答案　<input type="text" class="resgister_Answer" placeholder="输入问题答案" /></p>
+						<p class="lxm_rules"><input class="resgister_Check" type="checkbox" id="aa" /><label for="aa">我已阅读并接受<a class="lxm_Agreement" href="#" target="_blank">《咖芒网免责声明》</a></label></p>
+
+						<button class="register_sub">提交</button>
+						<i class="glyphicon glyphicon-arrow-left resgister_back"></i>
+						<i class="glyphicon glyphicon-remove resgister_remove"></i>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			<div class="hqqb">
+			<span>您的密钥是：</span>
+			<span class="miyaoText">swdwdwd2ewe</span>
+			<span class="mybeSure">确定</span>			
+		    </div>
+		
+		<div class="zhj_wrapper">
+			
+			<div class="zhj_personTop">
+				<div class="zhj_personTopImg">
+					<img class="upImg"/>
+				</div>
+				<div class="zhj_personTopName"></div>
+				<div class="zhj_xinyu reputatioon"></div>
+				
+				<div class="zhj_reset">
+					<i class="glyphicon glyphicon-cog"></i>
+				<div class="zhj_hoverReset">
+					<div class="zhj_personReset">
+						<div class="zhj_personReset">
+						个人设置	
+						</div>
+					</div>
+				</div>						
+				</div>
+				
+				<div class="zhj_shop">
+					<i class="glyphicon glyphicon-home"></i>
+					<div class="zhj_hoverShop">
+					<div class="zhj_personShop">
+						<div class="zhj_personShop">
+						开店
+						</div>
+					</div>
+				</div>	
+				</div>
+				
+				<div class="zhj_aline"></div>
+				<div class="zhj_authentication">
+					<i class="glyphicon glyphicon-user"></i>
+					<span class="smrz">实名认证</span>
+				</div>
+				<div class="zhj_notCertified">
+					<i class="glyphicon glyphicon-eye-close"></i>
+					<span>未认证</span>
+				</div>
+				<div class="butn">
+					获取秘钥
+				</div>
+			</div>
+			
+			<div class="zhj_myType">
+				<div class="zhj_Release fabu">我的发布</div>
+				<div class="zhj_Release gmjilu">购买记录</div>
+				<div class="zhj_Release qbao">钱包</div>
+				<div class="zhj_Release jianli">我的简历</div>
+			</div>
+			
+			<div class="zhj_wallet">
+				<div class="zhj_walletTex">
+					钱包
+				</div>
+				<div class="zhj_Amount">
+					<div class="inputTxt" ></div>
+					<input type="button" class="btn btn-primary walletCash
+" value="钱包提现"/>
+				</div>
+				<div class="zhj_transaction">交易明细</div>
+				<div class="zhj_edit">
+					<div class="zhj_textarea">					
+						<div class="textAll">
+							<span class="zhjname">提现金额：</span>
+							<span class="zhbT">支护宝账号：</span>
+							<span class="zhjd">提现进度：</span>
+						</div>
+						
+						<div class="allList">						
+						<!--<div class="jine">
+							<span class="allje">200</span>
+							<span class="allLine"></span>
+							<span class="allNumb">15110116410</span>
+							<span class="allLine2"></span>
+							<span class="alljindu">0</span>
+							<span class="zhj_Btn">通过审核</span>
+						</div>-->
+						</div>									
+					</div>
+				</div>
+			</div>
+			
+	<!--我的发布-->		
+			<div class="zhj_Releases">
+				<div class="zhj_myRelease">我的发布</div>
+				<div class="allFB">
+					
+				<!--<a href="listDetails.html?"><div class="zhj_Modular">
+					<div class="zhj_ModularImg">
+						<img src="../images/gg5.jpeg" alt="" />
+					</div>
+					<div class="zhj_Title">
+						标题
+					</div>
+					<div class="zhj_price">
+						价格
+					</div>
+					</a>
+					<div class="zhj_cuo">
+						<i class="glyphicon glyphicon-remove-circle" id=' + data.data[i].listid + '></i>
+					</div>
+					
+				</div>	-->
+								
+				
+				
+				<!--<div class="zhj_jiajia">
+					<img src="../images/onImg.png" alt="" />
+				</div>-->
+				
+				
+				
+			</div>
+		</div>
+			
+		<!--我的简历-->	
+			<div class="zhj_resume">
+				<div class="zhihubao">
+					<div class="zhihubao_left">
+						姓名：
+					</div>
+					<div class="zhihubao_nickName">
+						职位：
+					</div>
+					<div class="zhihubao_butn">
+						按钮
+					</div>
+				</div>
+				<div class="allJls">
+					
+				<!--<div class="resumeAll">
+					<div class="resumeAll_left">
+						阿曾啊
+					</div>
+					<div class="resumeAll_line">
+						
+					</div>
+					<div class="resumeAll_nickName">
+						前端
+					</div>
+					<div class="resumeBtnO">
+						删除
+					</div>
+					<div class="resumeBtnT">
+						编辑
+					</div>
+				</div>-->
+				
+				
+				</div>
+			</div>
+			
+			
+			
+			
+		<!--购买记录-->	
+			<div class="zhj_purchase">
+				<div class="zhj_mypurchase">购买记录</div>
+				<div class="allJL">
+					
+				<!--<a href="listDetails.html">	
+				<div class="zhj_purchaseModule">
+					<div class="zhj_purchaseModules">
+						<img src="../images/gg4.jpeg" alt="" />
+					</div>
+					<div class="zhj_purchaseTitle">
+						标题
+					</div>
+					<div class="zhj_purchaseprice">
+						下载
+					</div>
+				</a>
+					<div class="zhj_jmcuo">
+						<i class="glyphicon glyphicon-remove-circle" id=' + data.data[i].listid + '></i>
+					</div>
+				</div>-->
+				
+				<!--<div class="zhj_purchaseModule">
+					<div class="zhj_purchaseModules">
+						<img src="../images/gg4.jpeg" alt="" />
+					</div>
+					<div class="zhj_purchaseTitle">
+						标题
+					</div>
+					<div class="zhj_purchaseprice">
+						下载
+					</div>
+				</div>-->
+				
+				<!--<div class="zhj_purchaseModule">
+					<div class="zhj_purchaseModules">
+						<img src="../images/gg4.jpeg" alt="" />
+					</div>
+					<div class="zhj_purchaseTitle">
+						标题
+					</div>
+					<div class="zhj_purchaseprice">
+						下载
+					</div>
+				</div>-->
+				
+				<!--<div class="zhj_purchaseModule">
+					<div class="zhj_purchaseModules">
+						<img src="../images/gg4.jpeg" alt="" />
+					</div>
+					<div class="zhj_purchaseTitle">
+						标题
+					</div>
+					<div class="zhj_purchaseprice">
+						下载
+					</div>
+				
+		
+				</div>-->
+				
+							
+			</div>
+			</div>
+			<div class="footer">
+			<ul>
+				<li class="fl">
+					<a href="javascript:;">联系我们 </a>|
+					<a href="javascript:;">关于我们 </a>|
+					<a href="recruitList.html">咖芒招聘 </a>|
+					<a href="newList.html">咖芒新闻</a>
+				</li>
+				<li class="fr">Copyright© Huaban.com 2016 | 浙B2-20110282 浙ICP备05049240</li>
+			</ul>
+		</div>
+			
+		</div>
+		
+	<!--提现-->	
+		<div class="zhj_Withdrawals">
+			<div class="zhj_wisWith">
+				<div class="zhj_Wrong">
+					<i class="glyphicon glyphicon-remove cuo"></i>
+				</div>
+				
+				<div class="zhj_Withdrawal">
+					提现
+				</div>
+				<div class="zhj_Amounts">
+					提现金额
+					<span>(不低于100元)</span>
+				</div>
+				<div class="zhj_money">
+					<span>￥</span>
+					<input type="text" class="form-control priceInp"/>
+					<span>当前可提现金额：￥0元</span>
+				</div>
+				
+				<div class="zhj_account">
+					支付宝账户
+					<span>(输入您的或者信任的支付宝帐号)</span>
+				</div>
+				<div class="zhj_Alipay">
+					<input type="text" class="form-control AlipayInp"/>
+				    <span class="datazhb"></span>
+				</div>
+								
+				<!--<div class="zhj_phone">
+					手机号
+				</div>
+				<div class="zhj_tel">
+					<input type="tel" class="form-control telInp"/>
+				</div>	-->
+				
+				<!--<div class="zhj_Code">
+					手机验证码
+				</div>
+				<div class="zhj_Codes">
+					<input type="text" class="form-control codesInp"/>
+						<input type="button" class="btn btn-primary codebtn" value="输入验证码"/>
+				</div>-->
+				
+				<div class="zhj_Verification">
+					咖芒密码
+				</div>
+				<div class="zhj_Verifications">
+					<input type="text" class="form-control VerificationInp"/>
+				    <span class="datapas">你输入的密码格式不对哦！</span>
+				</div>	
+				
+				<div class="zhj_Notice">
+					<span>
+						用户须知
+					</span>
+					<span>
+						当前只支持提现到支付宝帐号，我们会在7个工作日转入到您的帐号。
+					</span>
+				</div>
+				
+				<div class="zhj_Button">
+					<input type="button" class="cancel" value="取消"/>
+					<input type="button" class="beSure" value="确定"/>
+				</div>						
+			</div>								
+		</div>
+		
+		<script src="../javascripts/hammer.js"></script>
+		
+		<script src="../javascripts/jquery.base64.js"></script>
+	    <!--<script src="../javascripts/reputation.js"></script>-->
+	    
+	    <script src="../javascripts/common.js"></script>
+	</body>
+</html>
